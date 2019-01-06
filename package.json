@@ -1,0 +1,27 @@
+{
+  "name": "elven-scout",
+  "version": "1.0.0",
+  "description": "Mini ES6 game",
+  "main": "index.js",
+  "scripts": {
+    "dist": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webgirlkristina/elven-scout.git"
+  },
+  "author": "WebGirl Kristina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webgirlkristina/elven-scout/issues"
+  },
+  "homepage": "https://github.com/webgirlkristina/elven-scout#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
