@@ -4,7 +4,9 @@
   "description": "Mini ES6 game",
   "main": "index.js",
   "scripts": {
-    "dist": "webpack-dev-server"
+    "dist": "webpack",
+    "watch": "webpack -w",
+    "server": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
