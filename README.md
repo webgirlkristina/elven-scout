@@ -11,3 +11,6 @@
 
 #### Создаем игру Elven Scout на ES6. #3 — Создание графики.
 [![Создаем игру Elven Scout на ES6. #2 — Игровой цикл, основная структура.](https://img.youtube.com/vi/r6F7WafrvTE/0.jpg)](https://www.youtube.com/watch?v=r6F7WafrvTE)
+
+#### Создаем игру Elven Scout на ES6. #4 — Загрузка графики, управление сценами.
+[![Создаем игру Elven Scout на ES6. #4 — Загрузка графики, управление сценами.](https://img.youtube.com/vi/tL2nu5OW3E0/0.jpg)](https://www.youtube.com/watch?v=tL2nu5OW3E0)
