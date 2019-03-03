@@ -41,4 +41,10 @@ export class Screen {
     drawImage(x, y, imageName) {
         this.context.drawImage(this.images[imageName], x, y);
     }
+
+    drawSprite(sprite) {
+        this.context.drawImage(this.images[sprite.imageName],
+            sprite.sourceX, sprite.sourceY, sprite.width, sprite.height,
+            sprite.x, sprite.y, sprite.width, sprite.height);
+    }
 }
