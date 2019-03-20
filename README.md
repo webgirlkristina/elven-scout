@@ -20,3 +20,6 @@
 
 #### Создаем игру Elven Scout на ES6. #6 — Спрайты и анимация.
 [![Создаем игру Elven Scout на ES6. #6 — Спрайты и анимация.](https://img.youtube.com/vi/--roJ3ZQpBk/0.jpg)](https://www.youtube.com/watch?v=--roJ3ZQpBk)
+
+#### Создаем игру Elven Scout на ES6. #7 — Тайловая карта.
+[![Создаем игру Elven Scout на ES6. #7 — Тайловая карта.](https://img.youtube.com/vi/PmZ38JHEAys/0.jpg)](https://www.youtube.com/watch?v=PmZ38JHEAys)

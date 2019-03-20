@@ -1,4 +1,5 @@
 import { ImageLoader } from './image-loader'
+import { TileMap } from './tile-map';
 
 export class Screen {
     constructor(width, height) {
@@ -25,6 +26,49 @@ export class Screen {
         canvas.width = width;
         canvas.height = height;        
         return canvas;
+    }
+
+    createMap(name, mapData, tileset) {
+        const mapImage = document.createElement('canvas');
+        mapImage.width = mapData.width * mapData.tilewidth;
+        mapImage.height = mapData.height * mapData.tileheight;
+        const mapContext = mapImage.getContext('2d');
+        const hitboxes = [];
+        let row, col;
+        mapData.layers.forEach(layer => {
+            if(layer.type == "tilelayer") {
+                row = 0;
+                col = 0;
+                layer.data.forEach(index => {
+                    if(index > 0) {
+                        mapContext.drawImage(this.images[tileset.imageName],
+                            tileset.getSourceX(index), tileset.getSourceY(index),
+                            mapData.tilewidth, mapData.tileheight,
+                            col * mapData.tilewidth, row * mapData.tileheight,
+                            mapData.tilewidth, mapData.tileheight
+                            );
+                    }
+                    col++;
+                    if(col > (mapData.width - 1)) {
+                        col = 0;
+                        row++;
+                    }
+                });
+            }
+            if(layer.type == "objectgroup") {
+                hitboxes.push(...layer.objects.map(obj => ({x1: obj.x, x2: obj.x + obj.width, y1: obj.y, y2: obj.y + obj.height})));
+            }
+        });
+
+        this.images[name] = mapImage;
+        return new TileMap({
+            imageName: name,
+            sourceX: 0,
+            sourceY: 0,
+            width: mapImage.width,
+            height: mapImage.height,
+            hitboxes: hitboxes
+        });
     }
 
     fill(color) {
