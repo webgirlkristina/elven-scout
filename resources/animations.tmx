@@ -1,8 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="left-up" width="20" height="1" tilewidth="64" tileheight="64" nextobjectid="1">
- <layer name="Слой тайлов 1" width="20" height="1">
+ <tileset firstgid="1" source="playertiles.tsx"/>
+ <layer name="spell_up" width="20" height="1" visible="0">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,2,3,4,5,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="spell_left" width="20" height="1" visible="0">
+  <data encoding="csv">
+15,16,17,18,19,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="spell_down" width="20" height="1" visible="0">
+  <data encoding="csv">
+27,28,29,30,31,32,33,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="spell_right" width="20" height="1" visible="0">
+  <data encoding="csv">
+40,41,42,43,44,45,46,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="stab_up" width="20" height="1" visible="0">
+  <data encoding="csv">
+53,54,55,56,57,58,59,60,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="stab_left" width="20" height="1" visible="0">
+  <data encoding="csv">
+66,67,68,69,70,71,72,73,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="stab_down" width="20" height="1" visible="0">
+  <data encoding="csv">
+79,80,81,82,83,84,85,86,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="stab_right" width="20" height="1" visible="0">
+  <data encoding="csv">
+92,93,94,95,96,97,98,99,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="walk_up" width="20" height="1" visible="0">
+  <data encoding="csv">
+105,106,107,108,109,110,111,112,113,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="walk_left" width="20" height="1" visible="0">
+  <data encoding="csv">
+118,119,120,121,122,123,124,125,126,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="walk_down" width="20" height="1" visible="0">
+  <data encoding="csv">
+131,132,133,134,135,136,137,138,139,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="walk_right" width="20" height="1" visible="0">
+  <data encoding="csv">
+144,145,146,147,148,149,150,151,152,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="cut_up" width="20" height="1" visible="0">
+  <data encoding="csv">
+157,158,159,160,161,162,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="cut_left" width="20" height="1" visible="0">
+  <data encoding="csv">
+170,171,172,173,174,175,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="cut_down" width="20" height="1" visible="0">
+  <data encoding="csv">
+183,184,185,186,187,188,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="cut_right" width="20" height="1" visible="0">
+  <data encoding="csv">
+196,197,198,199,200,201,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="shoot_up" width="20" height="1" visible="0">
+  <data encoding="csv">
+209,210,211,212,213,214,215,216,217,218,219,220,221,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="shoot_left" width="20" height="1" visible="0">
+  <data encoding="csv">
+222,223,224,225,226,227,228,229,230,231,232,233,234,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="shoot_down" width="20" height="1" visible="0">
+  <data encoding="csv">
+235,236,237,238,239,240,241,242,243,244,245,246,247,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="shoot_right" width="20" height="1" visible="0">
+  <data encoding="csv">
+248,249,250,251,252,253,254,255,256,257,258,259,260,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="death" width="20" height="1">
+  <data encoding="csv">
+261,262,263,264,265,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
 </map>
