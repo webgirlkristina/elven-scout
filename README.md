@@ -29,3 +29,6 @@
 
 #### Создаем игру Elven Scout на ES6. #9 — Игровой персонаж.
 [![Создаем игру Elven Scout на ES6. #9 — Игровой персонаж.](https://img.youtube.com/vi/uA5WVkAWPNk/0.jpg)](https://www.youtube.com/watch?v=uA5WVkAWPNk)
+
+#### Создаем игру Elven Scout на ES6. #10 — Камера.
+[![Создаем игру Elven Scout на ES6. #10 — Камера.](https://img.youtube.com/vi/WPLJj0Ptuyg/0.jpg)](https://www.youtube.com/watch?v=WPLJj0Ptuyg)

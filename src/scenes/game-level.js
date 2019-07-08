@@ -1,7 +1,8 @@
 import { Scene } from '../scene';
 import { SpriteSheet } from '../sprite-sheet';
 import { CharacterSheet } from '../character-sheet';
-import { Player } from '../Player';
+import { Player } from '../player';
+import { Camera } from '../camera';
 
 export class GameLevel extends Scene {
     constructor(game) {
@@ -26,11 +27,20 @@ export class GameLevel extends Scene {
         super.init();
         const mapData = require('../maps/level1.json');
         this.map = this.game.screen.createMap("level1", mapData, this.tiles);
+        this.mainCamera = new Camera({
+            width: this.game.screen.width,
+            height: this.game.screen.height,
+            limitX: this.map.width - this.game.screen.width,
+            limitY: this.map.height - this.game.screen.height
+        });
+        this.mainCamera.watch(this.player);
+        this.game.screen.setCamera(this.mainCamera);
     }
 
     update(time) {
         this.orc.update(time);
         this.player.update(time);
+        this.mainCamera.update(time);
     }
 
     render(time) {
