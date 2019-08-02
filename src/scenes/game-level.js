@@ -3,6 +3,7 @@ import { SpriteSheet } from '../sprite-sheet';
 import { CharacterSheet } from '../character-sheet';
 import { Player } from '../player';
 import { Camera } from '../camera';
+import { Collider } from '../collider';
 
 export class GameLevel extends Scene {
     constructor(game) {
@@ -21,6 +22,8 @@ export class GameLevel extends Scene {
         this.player = new Player(this.game.control);
         this.player.x = 100;
         this.player.y = 100;
+
+        this.collider = new Collider();
     }
 
     init() {
@@ -35,11 +38,15 @@ export class GameLevel extends Scene {
         });
         this.mainCamera.watch(this.player);
         this.game.screen.setCamera(this.mainCamera);
+
+        this.collider.addStaticShapes(mapData);
+        this.collider.addKinematicBody(this.player);
     }
 
     update(time) {
         this.orc.update(time);
         this.player.update(time);
+        this.collider.update(time);
         this.mainCamera.update(time);
     }
 

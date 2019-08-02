@@ -32,3 +32,7 @@
 
 #### Создаем игру Elven Scout на ES6. #10 — Камера.
 [![Создаем игру Elven Scout на ES6. #10 — Камера.](https://img.youtube.com/vi/WPLJj0Ptuyg/0.jpg)](https://www.youtube.com/watch?v=WPLJj0Ptuyg)
+
+
+#### Создаем игру Elven Scout на ES6. #11 — Коллизия.
+[![Создаем игру Elven Scout на ES6. #11 — Коллизия.](https://img.youtube.com/vi/OVVIiHWXilU/0.jpg)](https://www.youtube.com/watch?v=OVVIiHWXilU)

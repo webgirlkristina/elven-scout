@@ -9,6 +9,7 @@ export class Body {
         this.velocity = new Vector("down", 0);
         this.lastTime = 0;
         this.animations = {};
+        this.collisionShape = {x: 18, y: 15, width: 28, height: 49};
 
         const animationSheet = new CharacterSheet({imageName: imageName});
         "walk_down,walk_up,walk_left,walk_right".split(",").forEach(name => {
