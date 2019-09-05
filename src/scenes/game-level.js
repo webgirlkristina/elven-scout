@@ -4,6 +4,7 @@ import { CharacterSheet } from '../character-sheet';
 import { Player } from '../player';
 import { Camera } from '../camera';
 import { Collider } from '../collider';
+import { Orc } from '../orc';
 
 export class GameLevel extends Scene {
     constructor(game) {
@@ -15,9 +16,10 @@ export class GameLevel extends Scene {
         });
         this.tree = this.tiles.getSprite(7);
         this.tree.setXY(10, 10);
-        this.orcTiles = new CharacterSheet({imageName: "orc"});
-        this.orc = this.orcTiles.getAnimation("stab_down");
-        this.orc.setXY(100,10);
+        //this.orcTiles = new CharacterSheet({imageName: "orc"});
+        this.orc = new Orc();
+        this.orc.x = 500;
+        this.orc.y = 300;
 
         this.player = new Player(this.game.control);
         this.player.x = 100;
@@ -41,6 +43,7 @@ export class GameLevel extends Scene {
 
         this.collider.addStaticShapes(mapData);
         this.collider.addKinematicBody(this.player);
+        this.collider.addKinematicBody(this.orc);
     }
 
     update(time) {
@@ -55,7 +58,7 @@ export class GameLevel extends Scene {
         this.game.screen.fill('#000000');
         this.game.screen.drawSprite(this.map);
         //this.game.screen.drawSprite(this.tree);
-        this.game.screen.drawSprite(this.orc);
+        this.game.screen.drawSprite(this.orc.view);
         this.game.screen.drawSprite(this.player.view);
         super.render(time);
     }

@@ -36,3 +36,7 @@
 
 #### Создаем игру Elven Scout на ES6. #11 — Коллизия.
 [![Создаем игру Elven Scout на ES6. #11 — Коллизия.](https://img.youtube.com/vi/OVVIiHWXilU/0.jpg)](https://www.youtube.com/watch?v=OVVIiHWXilU)
+
+
+#### Создаем игру Elven Scout на ES6. #12 — Враг.
+[![Создаем игру Elven Scout на ES6. #12 — Враг.](https://img.youtube.com/vi/y1Lt7d-OG_U/0.jpg)](https://www.youtube.com/watch?v=y1Lt7d-OG_U)
