@@ -17,6 +17,7 @@ export class Animation extends Sprite {
         this.lastTime = 0;
         this.currentFrame = 0;
         this.totalFrames = this.frames.length;
+        this.onEnd = null;
     }
 
     setFrame(index) {
@@ -38,6 +39,9 @@ export class Animation extends Sprite {
 
     nextFrame() {
         if((this.currentFrame + 1) == this.totalFrames) {
+            if(this.onEnd) {
+                this.onEnd();
+            }
             if(this.repeat) {
                 this.setFrame(0);
                 return;

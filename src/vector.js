@@ -27,4 +27,9 @@ export class Vector {
             
         }
     }
+
+    move(object, dt) {
+        object.x += dt * (this.x / 1000);
+        object.y += dt * (this.y / 1000);
+    }
 }

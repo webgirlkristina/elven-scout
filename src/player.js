@@ -7,7 +7,9 @@ export class Player extends Body {
     }
 
     update(time) {
-        if(this.control.up) {
+        if(this.control.fire) {
+            this.shoot();
+        } else if(this.control.up) {
             this.walk("up");
         } else if(this.control.down) {
             this.walk("down");
