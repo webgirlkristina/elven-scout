@@ -43,3 +43,6 @@
 
 #### Создаем игру Elven Scout на ES6. #13 — Оружие.
 [![Создаем игру Elven Scout на ES6. #13 — Оружие.](https://img.youtube.com/vi/zqDXMlOAvxM/0.jpg)](https://www.youtube.com/watch?v=zqDXMlOAvxM)
+
+#### Создаем игру Elven Scout на ES6. #14 — Стрелы.
+[![Создаем игру Elven Scout на ES6. #14 — Стрелы.](https://img.youtube.com/vi/GSPsy_4-Gtw/0.jpg)](https://www.youtube.com/watch?v=GSPsy_4-Gtw)

@@ -4,11 +4,16 @@ export class Player extends Body {
     constructor(control) {
         super({imageName: "player", speed: 50});
         this.control = control;
+        this.arrow = false;
+    }
+
+    addArrow(arrow) {
+        this.arrow = arrow;
     }
 
     update(time) {
         if(this.control.fire) {
-            this.shoot();
+            if(this.arrow) this.shoot(this.arrow);
         } else if(this.control.up) {
             this.walk("up");
         } else if(this.control.down) {
